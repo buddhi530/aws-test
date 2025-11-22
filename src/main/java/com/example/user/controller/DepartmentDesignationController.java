@@ -77,5 +77,12 @@ public class DepartmentDesignationController {
         return responseEntity;
     }
 
+    @GetMapping("/checkapi")
+    public String checkApi(){
+        log.info("Start checkApi method");
+
+        return "docker check";
+    }
+
 }
 
